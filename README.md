@@ -6,17 +6,17 @@ This project implements a complete, real-time stock market data processing syste
 
 ```mermaid
 graph TB
-    A[Fyers API] --> B[Fyers Data Manager (Producer)]
-    B --> C[Kafka Topic: stock_prices]
-    C --> D[Fyers Stream Processor (Consumer)]
-    D --> E[In-Memory Analytics Engine]
-    E --> F[Aggregations (MA, RSI)]
-    E --> G[Alerts]
-    E --> H[Trend & Volatility Analysis]
-    D --> I[FastAPI Application]
-    I --> J[WebSocket Updates]
-    I --> K[REST APIs]
-    L[Frontend Apps / Clients] --> K
+    A["Fyers API"] --> B["Fyers Data Manager (Producer)"]
+    B --> C["Kafka Topic: stock_prices"]
+    C --> D["Fyers Stream Processor (Consumer)"]
+    D --> E["In-Memory Analytics Engine"]
+    E --> F["Aggregations (MA, RSI)"]
+    E --> G["Alerts"]
+    E --> H["Trend & Volatility Analysis"]
+    D --> I["FastAPI Application"]
+    I --> J["WebSocket Updates"]
+    I --> K["REST APIs"]
+    L["Frontend Apps / Clients"] --> K
     L --> J
 ```
 
